@@ -18,8 +18,8 @@ from a simple Python script. (See example below).
 
 ## Monitoring a running workflow
 Once a workflow is running, you have access to easy monitoring of the current
-running tasks in oyur browser. By default, you can access the web server
-exposing the monitoring on localhost port XYZ.     
+running tasks in your browser. By default, you can access the web server
+exposing the monitoring on http://localhost:6767
 <TO-DO add screenshot>
 
 ## Workflow example
@@ -90,16 +90,3 @@ workflow.run(wf)
 # Shut down.
 workflow.shutdown()
 ```
-
-## Why a SLING task system?
-With so many existing task systems around, you could rightfully ask:
-“why did you decide to build your own?”. Essentially, we needed a
-system that would allow us to define workflows by  composing tasks
-of varying complexity with interdependencies and that also allow us
-to monitor the running process. The SLING task system allows us to
-accomplish exactly this. Moreover, it was written in a reasonably
-short amount of time and maintaining it has been fairly easy. So
-overall it hasn’t been a huge investment compared to the returns
-we're now seeing every day as we use the task system. Compared with
-the overhead of taking in a foreign task system, it hence seemed like
-a minimal investment to make. 
